@@ -1,0 +1,12 @@
+.btn-form_delete {
+    width: 100%;
+    text-align: left !important;
+    padding: 12px 16px !important;
+}
+.btn-form_delete:hover {
+    background-color: #f1f1f1;
+}
+.table img {
+    max-width: 100px;
+    object-fit: cover;
+}
