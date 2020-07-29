@@ -19,5 +19,5 @@
 А через REST API мобильное приложение отображает книги и аудио книги пользователям.<br>
 
 ### Документация REST API для мобильного приложения
-<a href="https://github.com/Rustambx/books/blob/spatie/restapi.md">Документация REST API</a>
+<a href="https://github.com/Rustambx/books-API/blob/master/restapi.md">Документация REST API</a>
 

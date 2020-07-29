@@ -4,19 +4,17 @@
 <br>**Body:**
 ```json  
 {
-	"email" : email пользователя
-	"password" : password пользователя
+    "email" : "email пользователя",
+    "password" : "password пользователя"
 }
 ```
 **Response-type:** json
 <br>**Response:**
 ```json 
 {
-	[
-		"acces_token" : "auth_token"
-		"token_type" : "bearer"
-		"expires_in" : 3600
-	]
+    "acces_token" : "auth_token",
+    "token_type" : "bearer",
+    "expires_in" : 3600
 }
 ```
 **2. Регистрация пользователя**<br>
@@ -25,19 +23,17 @@
 <br>**Body:**
 ```json  
 {
-	"name" : Имя пользователя
-	"email" : email пользователя
-	"password" : password пользователя
-	"photo" : Фото пользователя
+    "name" : "Имя пользователя",
+    "email" : "email пользователя",
+    "password" : "password пользователя",
+    "photo" : "Фото пользователя"
 }
 ```
 <br>**Response-type:** json
 <br>**Response:** 
 ```json 
 {
-	[
-		"success" : "Пользователь успешно зарегистрирован"
-	]
+    "success" : "Пользователь успешно зарегистрирован"
 }
 ```
 **3. Профиль пользователя**<br>
@@ -48,9 +44,7 @@
 <br>**Response:** 
 ```json 
 {
-	[
-		Информация о пользователе
-	]
+    "Информация о пользователе"
 }
 ```
 **4. Избранные книги пользователя**<br>
@@ -62,9 +56,7 @@
 <br>**Response:**
 ```json  
 {
-	[
-		"books" : Избранные книги пользователя
-	]
+    "books" : "Избранные книги пользователя"
 }
 ```
 **5. Редактирования данные пользователя**<br>
@@ -74,32 +66,29 @@
 <br>**Body:** 
 ```json
 {
-	"name" : Имя пользователя
-	"email" : email пользователя
-	"password" : password пользователя
-	"photo" : Фото пользователя
+    "name" : "Имя пользователя",
+    "email" : "email пользователя",
+    "password" : "password пользователя",
+    "photo" : "Фото пользователя"
 }
 ```
 <br>**Header:** authorization = bearer auth_token
 <br>**Response-type:** json
-<br>**Response:** {
-<br>	
+<br>**Response:** 
 ```json 
-[
+{	
     "success" : "Пользователь успешно обновлен"
-]
-```
 }
+```
 
-
-**6. травление токена на email пользователя**<br>
+**6. Отравление токена на email пользователя**<br>
 **Url:** api.loc/api/password/email
 <br>**Description:** "Отправляеть на email пользователя код токена"
 <br>**Request-type:** POST
 <br>**Body:** 
 ```json
 {
-	"email" : email пользователя
+    "email" : "email пользователя"
 }
 ```
 <br>**Header:** authorization = bearer auth_token
@@ -107,9 +96,7 @@
 <br>**Response:** 
 ```json
 {
-	[
-		"message": "passwords.sent"
-	]
+    "message": "passwords.sent"
 }
 ```
 **7. Восстановление пароля**<br>
@@ -119,10 +106,10 @@
 <br>**Body:** 
 ```json
 {
-	"token" : "Код токена"
-	"email" : "email пользователя"
-	"password" : "Новый пароль"
-	"pasword_confirmation" : "Подтверждение нового пароля"
+    "token" : "Код токена",
+    "email" : "email пользователя",
+    "password" : "Новый пароль",
+    "pasword_confirmation" : "Подтверждение нового пароля"
 }
 ```
 <br>**Header**: authorization = bearer auth_token
@@ -130,9 +117,7 @@
 <br>**Response:** 
 ```json
 {
-	[
-		"message": "passwords.reset"
-	]
+    "message": "passwords.reset"
 }
 ```
 **8. Возвращает самые последние 5 книг**<br>
@@ -143,9 +128,7 @@
 <br>**Response:** 
 ```json
 {
-    [
-        "books" : "Возвращает последние 5 книг"
-    ]
+    "books" : "Возвращает последние 5 книг"
 }
 ```
 **9. Возвращает все жанры**<br>
@@ -156,11 +139,9 @@
 <br>**Response:** 
 ```json
 {
-	[
-		"genres" : "Возвращает родительские жанры"
-		"subGenres" : "Возвращает поджанры жанры"
-		"all" : "Возвращает все жанры"
-	]
+    "genres" : "Возвращает родительские жанры",
+    "subGenres" : "Возвращает поджанры жанры",
+    "all" : "Возвращает все жанры"
 }
 ```
 **10. Возвращает рекомендованные книги**<br>
@@ -171,9 +152,7 @@
 <br>**Response:**
 ```json
 {
-	[
-		"books" : "Возвращает рекомендуемые книги по жанрам"
-	]
+    "books" : "Возвращает рекомендуемые книги по жанрам"
 }
 ``` 
 **11. Возвращает комментарии книги**<br>
@@ -185,9 +164,7 @@
 <br>**Response:**
 ```json
 {
-	[
-		"comments" : "Возвращает комментарии книги"
-	]
+    "comments" : "Возвращает комментарии книги"
 }
 ``` 
 **12. Возвращает глави книги**<br>
@@ -199,9 +176,7 @@
 <br>**Response:** 
 ```json
 {
-	[
-		"comments" : "Возвращает глави книги"
-	]
+    "comments" : "Возвращает глави книги"
 }
 ```
 1**3. Добавление комментарии**<br>
@@ -211,22 +186,18 @@
 <br>**Body:**
 ```json
 {
-	"description" : Текст комментарии
-	"user_id" : id пользователя
-	"book_id" : id книги
+    "description" : "Текст комментарии",
+    "user_id" : "id пользователя",
+    "book_id" : "id книги"
 }
 ``` 
-
 <br>**Response-type:** json
 <br>**Response:**
 ```json
 {
-	[
-		"success" : Комментария успешно добавлена
-	]
+    "success" : "Комментария успешно добавлена"
 }
 ``` 
-
 **14. Добавление like в книги**<br>
 **Url:** api.loc/api/book/comment/like
 <br>**Header:** authorization = bearer auth_token
@@ -234,17 +205,15 @@
 <br>**Body:** 
 ```json
 {
-	"comment_id" : id комментарии
-	"user_id" : id пользователя
+    "comment_id" : "id комментарии",
+    "user_id" : "id пользователя"
 }
 ```
 <br>**Response-type:** json
 <br>**Response:** 
 ```json
 {
-	[
-		"success" : "Comment liked"
-	]
+    "success" : "Comment liked"
 }
 ```
 **15. Поиск книг по названием**<br>
@@ -254,16 +223,14 @@
 <br>**Body:** 
 ```json
 {
-	"name" : Название книги
+    "name" : "Название книги"
 }
 ```
 **Response-type:** json
 <br>**Response:** 
 ```json
 {
-	[
-		"books" : Результаты
-	]
+    "books" : "Результаты"
 }
 ```
 **16. Возвращает условии и положении**<br>
@@ -274,9 +241,7 @@
 <br>**Response:** 
 ```json
 {
-	[
-		"conditions" : "Возвращает условии и положении"
-	]
+    "conditions" : "Возвращает условии и положении"
 }
 ```
 
