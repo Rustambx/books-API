@@ -9,8 +9,8 @@
 
 ### Тестовый доступ к админке:
 <b>Ссылка на админку:</b> <a href="http://book.larabody.ru/admin" target="_blank">http://book.larabody.ru/admin</a><br>
-<b>Логин: </b> Guest<br>
-<b>Пароль: </b> 123456789 
+<b>Логин: </b> guest@mail.ru<br>
+<b>Пароль: </b> 12345678 
 <br>
 
 ### Описание проекта

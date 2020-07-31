@@ -49,7 +49,7 @@
 ```
 **4. Избранные книги пользователя**<br>
 **id :** id пользователя
-**Url:** api.loc/api/user/library/{id}
+<br>**Url:** api.loc/api/user/library/{id}
 <br>**Request-type:** GET
 <br>**Header:** authorization = bearer auth_token
 <br>**Response-type:** json
@@ -83,7 +83,7 @@
 
 **6. Отравление токена на email пользователя**<br>
 **Url:** api.loc/api/password/email
-<br>**Description:** "Отправляеть на email пользователя код токена"
+<br>**Description:** Отправляеть на email пользователя код токена
 <br>**Request-type:** POST
 <br>**Body:** 
 ```json
@@ -101,7 +101,7 @@
 ```
 **7. Восстановление пароля**<br>
 **Url:** api.loc/api/password/reset
-<br>**Description:** "Принимает код токена"
+<br>**Description:** Принимает код токена
 <br>**Request-type:** POST
 <br>**Body:** 
 ```json
@@ -201,7 +201,7 @@
 **14. Добавление like в книги**<br>
 **Url:** api.loc/api/book/comment/like
 <br>**Header:** authorization = bearer auth_token
-<br**Request-type:** POST
+<br>**Request-type:** POST
 <br>**Body:** 
 ```json
 {
