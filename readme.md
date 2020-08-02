@@ -8,7 +8,7 @@
 <b>Версия MySQL :</b> 5.7.23
 
 ### Тестовый доступ к админке:
-<b>Ссылка на админку:</b> <a href="http://book.larabody.ru/admin" target="_blank">http://book.larabody.ru/admin</a><br>
+<b>Ссылка на админку:</b> <a href="http://book.larabody.ru/admin" target="_blank">http://book.larabody.ru</a><br>
 <b>Логин: </b> guest@mail.ru<br>
 <b>Пароль: </b> 12345678 
 <br>
