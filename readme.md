@@ -2,13 +2,13 @@
 
 ## Сайт панель управления электронных книг
 <b>Автор:</b> Рустам Артыкбаев<br>
-<b>Сайт:</b> <a href="http://book.larabody.ru/" target="_blank">http://book.larabody.ru/</a><br>
+<b>Сайт:</b> <a href="http://books.larabody.ru" target="_blank">http://books.larabody.ru/</a><br>
 <b>Версия Laravel :</b> 5.8<br>
 <b>Версия PHP :</b> 7.1.32<br>
 <b>Версия MySQL :</b> 5.7.23
 
 ### Тестовый доступ к админке:
-<b>Ссылка на админку:</b> <a href="http://book.larabody.ru/admin" target="_blank">http://book.larabody.ru</a><br>
+<b>Ссылка на админку:</b> <a href="http://books.larabody.ru" target="_blank">http://books.larabody.ru</a><br>
 <b>Логин: </b> guest@mail.ru<br>
 <b>Пароль: </b> 12345678 
 <br>
